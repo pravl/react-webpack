@@ -4,8 +4,19 @@
   "description": "React + Webpack Boilerplate ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production"
   },
   "author": "praval",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "css-loader": "^3.5.3",
+    "style-loader": "^1.2.0",
+    "webpack-dev-server": "^3.10.3"
+  }
 }
